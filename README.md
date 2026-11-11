@@ -2,6 +2,8 @@
 
 A plugin for Claude Code and Codex that keeps a repo's agent knowledge in one place: `.ai/`, one subject per file, indexed by `.ai/AGENTS.md`, read by the agent before any change.
 
+Why: agent instructions tend to pile up in one long `CLAUDE.md`, get copied into `.cursorrules` and `AGENTS.md`, and go stale. Here every fact has one home, the index tells the agent which files a task needs, and `kb-review` / `kb-clean` keep it true as the code moves.
+
 | Skill | What it does |
 |---|---|
 | `kb` | The pattern and its rules; triggers when the agent records a durable fact |
@@ -42,6 +44,8 @@ AGENTS.md          # what the project is + "start in .ai/"
 ```
 
 One fact lives in one file; the agent records what it learns in the same change as the code. Full rules: [skills/kb/SKILL.md](skills/kb/SKILL.md).
+
+Real example: [roby222/rush](https://github.com/roby222/rush) ([AGENTS.md](https://github.com/roby222/rush/blob/main/AGENTS.md), [.ai/](https://github.com/roby222/rush/tree/main/.ai)). This repo uses the pattern too.
 
 ## Status
 
