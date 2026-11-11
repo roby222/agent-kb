@@ -21,8 +21,28 @@ Claude Code:
 
 Then `/kb:kb-init`, `/kb:kb-review`, `/kb:kb-clean`, `/kb:kb-skills`.
 
-Codex: add the marketplace from `https://github.com/roby222/agent-kb.git` and install `kb`; call the skills as `$kb-init`, `$kb-review`, ...
+Codex:
+
+```
+codex plugin marketplace add roby222/agent-kb
+codex plugin add kb@agent-kb
+```
+
+Start a new Codex session, then call `$kb-init`, `$kb-review`, `$kb-clean`, `$kb-skills`.
+
+Update later with `/plugin marketplace update agent-kb` (Claude) or by re-running `codex plugin add kb@agent-kb` (Codex).
+
+## The pattern
+
+```
+AGENTS.md          # what the project is + "start in .ai/"
+.ai/AGENTS.md      # index: each file, and when to read it; house rules
+.ai/<subject>.md   # product, architecture, workflow, design, ...
+.agents/skills/    # project skills (.claude/skills links here)
+```
+
+One fact lives in one file; the agent records what it learns in the same change as the code. Full rules: [skills/kb/SKILL.md](skills/kb/SKILL.md).
 
 ## Status
 
-0.1.0, scaffolding. Skills are first drafts.
+0.1.0, early: the skills are first drafts. Issues and PRs welcome.

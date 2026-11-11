@@ -13,7 +13,7 @@
 ## Testing locally
 
 - Claude Code: `claude --plugin-dir ~/src/agent-kb`, then run `/kb:kb-review` in a repo that has `.ai/` (e.g. `~/src/rush`).
-- Codex: TODO(kb): record the local install command once verified.
+- Codex: `codex plugin marketplace add roby222/agent-kb` then `codex plugin add kb@agent-kb` (verified with codex-cli 0.164); it installs from GitHub `main`, so push before testing. On this Mac the binary is `~/.codex/plugins/.plugin-appserver/codex-cli/bin/codex` (not in PATH).
 
 ## Git
 
