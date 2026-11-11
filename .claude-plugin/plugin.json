@@ -1,0 +1,9 @@
+{
+  "name": "kb",
+  "version": "0.1.0",
+  "description": "Agent knowledge base in .ai/: init, skills, review, clean. One fact in one file, read before every change.",
+  "author": { "name": "roby222", "url": "https://github.com/roby222" },
+  "homepage": "https://github.com/roby222/agent-kb",
+  "repository": "https://github.com/roby222/agent-kb",
+  "license": "MIT"
+}

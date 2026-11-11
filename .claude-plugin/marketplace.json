@@ -1,0 +1,9 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "agent-kb",
+  "description": "Agent knowledge base pattern (.ai/) for Claude Code and Codex.",
+  "owner": { "name": "roby222", "url": "https://github.com/roby222" },
+  "plugins": [
+    { "name": "kb", "description": "Init, review and clean the .ai/ knowledge base; manage project skills.", "source": "./", "category": "productivity" }
+  ]
+}
